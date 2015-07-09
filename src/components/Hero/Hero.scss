@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.Hero {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	min-height: 70vh;
+	background: $color-gray-7;
+	color: #fff;
+
+	h1 {
+		font-style: italic;
+		font-weight: 300;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+}

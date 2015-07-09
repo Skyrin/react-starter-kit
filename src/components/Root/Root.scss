@@ -1,0 +1,9 @@
+@import '../../variables';
+@import '../../base';
+
+.Root {
+	min-height: 100%;
+	max-width: $screen-large;
+	margin: 0 auto;
+	padding: 0 $gutter;
+}

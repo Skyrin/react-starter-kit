@@ -1,0 +1,53 @@
+// type
+$fs-h1: 2.8rem;
+$fs-h2: 2rem;
+$fs-h3: 1.5rem;
+$fs-small: 0.8rem;
+
+$line-height: 1.5;
+
+$serif: "Linux Libertine",Georgia,Times,serif;
+$sans-serif: 'Open Sans', sans-serif;
+
+// color
+$color-gray-0: darken(#fff, 3%);
+$color-gray-1: darken(#fff, 6%);
+$color-gray-2: darken(#fff, 9%);
+$color-gray-3: darken(#fff, 13%);
+$color-gray-4: darken(#fff, 22%);
+$color-gray-5: darken(#fff, 34%);
+$color-gray-6: darken(#fff, 50%);
+$color-gray-7: darken(#fff, 65%);
+$color-gray-8: darken(#fff, 75%);
+$color-gray-9: darken(#fff, 85%);
+
+$color-red: #C62027;
+$color-green: green;
+$color-blue: #27AAE1;
+$color-text: #333333;
+$color-link: $color-blue;
+$color-mute: $color-gray-5;
+$color-border: $color-gray-2;
+$color-primary-dark: #085473;
+
+// z-index master list
+$z-sticky:		999;
+$z-main-nav:	1000;
+$z-dropdown:	1001;
+$z-modal: 		1002;
+$z-loading:		1004;
+$z-tooltip:		1005;
+
+// misc
+$margin-block:	1.5rem;
+$padding-td:	12px;
+$padding-input: 5px;
+$gutter: 2.2rem;
+
+// screen sizes
+$screen-min-width: 420px;
+$screen-xsmall:	565px;
+$screen-small:	768px;
+$screen-medium:	992px;
+$screen-large:	1240px;
+$screen-xlarge:	1920px;

@@ -1,0 +1,112 @@
+@mixin headline {
+	padding: 0.2em 0;
+	margin: 0 0 $margin-block;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	font-family: $serif;
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*:focus, a:focus {
+	outline: none;
+}
+
+[data-focused]:focus {
+	outline: $color-blue solid 2px;
+}
+
+[disabled] {
+	opacity: 0.4;
+	user-select: none;
+	pointer-events: none;
+}
+
+[hidden] { // polyfill for < IE11
+	display: none !important;
+}
+
+[role='button'] {
+	cursor: pointer;
+	user-select: none;
+	display: inline-block;
+}
+
+html, body, #react-root {
+	height: 100%;
+}
+
+html {
+	background: #fff;
+}
+
+input,
+textarea,
+button,
+body {
+	font-family: $sans-serif;
+	line-height: $line-height;
+}
+
+html {
+	color: $color-text;
+	font-size: 14px;
+}
+
+h1 {
+	@include headline;
+	font-size: $fs-h1;
+}
+h2 { 
+	@include headline;
+	font-size: $fs-h2;
+}
+h3 { 
+	@include headline;
+	font-size: $fs-h3;
+}
+h4 {
+	font-size: inherit;
+	margin: 0;
+}
+
+small {
+	font-size: $fs-small;
+}
+
+@media (max-width: $screen-xsmall) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: $screen-xlarge) {
+	html {
+		font-size: 16px;
+	}
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+p,
+ul,
+ol,
+pre,
+fieldset,
+figure,
+table {
+	margin: 0 0 $margin-block 0;
+}
+
+img {
+	max-width: 100%;
+}

@@ -1,0 +1,27 @@
+@import '../../variables';
+
+.Header {
+	margin-bottom: 20px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: table-cell;
+
+			a {
+				display: block;
+				padding: 10px;
+				background: $color-link;
+				color: #fff;
+				margin-right: 2px;
+
+				// Router.Link will automatically apply the active class
+				&.active {
+					background: $color-gray-6;
+				}
+			}
+		}
+	}
+}
