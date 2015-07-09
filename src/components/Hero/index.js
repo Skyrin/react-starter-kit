@@ -1,2 +1,3 @@
 import './Hero.scss';
-export default './Hero.js';
+import Component from './Hero.js';
+export default Component;

@@ -1,2 +1,3 @@
 import './Header.scss';
-export default './Header.js';
+import Component from './Header.js';
+export default Component;

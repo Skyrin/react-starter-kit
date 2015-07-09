@@ -1,25 +1,44 @@
-@import '../../variables';
+@import '../../variables.scss';
 
 .Header {
 	margin-bottom: 20px;
+	display: flex;
 
-	ul {
-		margin: 0;
-		padding: 0;
+	&_logo {
+		background: #ccc;
+		flex-shrink: 0;
+		margin-right: 2px;
+		padding: 5px 10px;
+		display: flex;
 
-		li {
-			display: table-cell;
+		&_icon {
+			margin: auto;
+			font-size: $fs-h3;
+			color: #fff;
+		}
+	}
 
-			a {
-				display: block;
-				padding: 10px;
-				background: $color-link;
-				color: #fff;
-				margin-right: 2px;
+	&_nav {
+		flex-shrink: 0;
 
-				// Router.Link will automatically apply the active class
-				&.active {
-					background: $color-gray-6;
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-flex;
+
+				a {
+					flex-shrink: 0;
+					padding: 10px;
+					background: $color-link;
+					color: #fff;
+					margin-right: 2px;
+
+					// Router.Link will automatically apply the active class
+					&.active {
+						background: $color-gray-6;
+					}
 				}
 			}
 		}

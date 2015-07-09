@@ -1,2 +1,3 @@
 import './Contact.scss';
-export default './Contact.js';
+import Component from './Contact.js';
+export default Component;

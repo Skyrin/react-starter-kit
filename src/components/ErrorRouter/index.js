@@ -1,2 +1,3 @@
 import './ErrorRouter.scss';
-export default './ErrorRouter.js';
+import Component from './ErrorRouter.js';
+export default Component;

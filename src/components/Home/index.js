@@ -1,2 +1,3 @@
 import './Home.scss';
-export default './Home.js';
+import Component from './Home.js';
+export default Component;

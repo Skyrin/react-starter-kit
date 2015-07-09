@@ -1,2 +1,3 @@
 import './Error404.scss';
-export default './Error404.js';
+import Component from './Error404.js';
+export default Component;

@@ -1,2 +1,3 @@
 import './About.scss';
-export default './About.js';
+import Component from './About.js';
+export default Component;
