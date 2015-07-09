@@ -21,7 +21,9 @@ npm install webpack -g
 
 The install this application and it's dependencies:
 ```
-npm install react-starter-kit
+git clone git@github.com:Skyrin/react-starter-kit.git app
+cd app
+npm install
 ```
 
 ### Development

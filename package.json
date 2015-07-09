@@ -1,11 +1,11 @@
 {
   "name": "react-starter-kit",
   "description": "A boilerplate React application using Webpack, react-router, and per-component CSS files.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/jackmoore/react-starter-kit.git"
+    "url": "http://github.com/skyrin/react-starter-kit.git"
   },
   "dependencies": {
     "autoprefixer-loader": "^2.0.0",
