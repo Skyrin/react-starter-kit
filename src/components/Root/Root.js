@@ -1,5 +1,4 @@
 import React from 'react';
-import Router from 'react-router';
 import Header from '../Header/';
 import DocTitle from 'react-document-title';
 
@@ -26,7 +25,7 @@ export default React.createClass({
 				<DocTitle title='Default Page Title'/>
 				<Header/>
 				<div className='Root_main'>
-					<Router.RouteHandler route={this.props.route}/>
+					{this.props.children}
 				</div>
 			</div>
 		);

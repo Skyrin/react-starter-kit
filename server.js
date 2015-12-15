@@ -5,12 +5,12 @@
 
 const express = require("express");
 const app = express();
+const document = require('./src/document.js');
 
 app.use(express.static(__dirname+"/public", {index: false}));
 
 app.get("/*", function(req, res) {
-	require("babel-core/register");
-	res.send(require('./src/document.js')())
+	res.send(document);
 });
 
 var server = app.listen(3333, function() {

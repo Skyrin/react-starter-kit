@@ -23,7 +23,7 @@ var client = {
 			{ test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' },
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
 			{ test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'raw-loader!autoprefixer-loader?browsers=last 2 version!sass-loader')},
-			{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional=runtime' },
+			{ test: /\.js$/, exclude: /node_modules/, loader: 'babel' },
 		]
 	},
 	plugins: [

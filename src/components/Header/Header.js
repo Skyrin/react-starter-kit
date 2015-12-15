@@ -1,19 +1,21 @@
 import React from 'react';
-import Router from 'react-router';
+import {Link} from 'react-router';
 
 export default React.createClass({
 	render() {
 		return (
 			<header className='Header'>
-				<Router.Link to={'/'} className='Header_logo'>
-					<i className='Header_logo_icon fa fa-home'/>
-				</Router.Link>
-				<div className='Header_nav'>
-					<ul>
-						<li><Router.Link to={'/about'}>About</Router.Link></li>
-						<li><Router.Link to={'/contact'}>Contact</Router.Link></li>
-					</ul>
-				</div>
+				<ul>
+					<li>
+						<Link to='/' activeClassName='is-active' onlyActiveOnIndex={true}><i className='Header_home-icon fa fa-home'/> Home</Link>
+					</li>
+					<li>
+						<Link to='/about' activeClassName='is-active'>About</Link>
+					</li>
+					<li>
+						<Link to='/contact' activeClassName='is-active'>Contact</Link>
+					</li>
+				</ul>
 			</header>
 		);
 	}

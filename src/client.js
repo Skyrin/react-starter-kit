@@ -1,7 +1,7 @@
-import React from 'react';
-import Router from 'react-router';
+import ReactDOM from 'react-dom';
 import routes from './routes';
+import {createHistory} from 'history';
 
-Router.run(routes, Router.HistoryLocation, (Handler, route)=>{
-	React.render(<Handler route={route}/>, document.getElementById('react-root'));
-});
+const history = createHistory();
+
+ReactDOM.render(routes(history), document.getElementById('react-root'));

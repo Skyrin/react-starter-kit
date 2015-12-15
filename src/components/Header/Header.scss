@@ -2,43 +2,28 @@
 
 .Header {
 	margin-bottom: 20px;
-	display: flex;
 
-	&_logo {
-		background: #ccc;
-		flex-shrink: 0;
-		margin-right: 2px;
-		padding: 5px 10px;
-		display: flex;
-
-		&_icon {
-			margin: auto;
-			font-size: $fs-h3;
-			color: #fff;
-		}
+	&_home-icon {
+		margin-right: 5px;
 	}
 
-	&_nav {
-		flex-shrink: 0;
+	ul {
+		margin: 0;
+		padding: 0;
 
-		ul {
-			margin: 0;
-			padding: 0;
+		li {
+			display: inline-flex;
 
-			li {
-				display: inline-flex;
+			a {
+				flex-shrink: 0;
+				padding: 10px;
+				background: $color-link;
+				color: #fff;
+				margin-right: 2px;
 
-				a {
-					flex-shrink: 0;
-					padding: 10px;
-					background: $color-link;
-					color: #fff;
-					margin-right: 2px;
-
-					// Router.Link will automatically apply the active class
-					&.active {
-						background: $color-gray-6;
-					}
+				// Router.Link will automatically apply the active class
+				&.is-active {
+					background: $color-gray-6;
 				}
 			}
 		}
